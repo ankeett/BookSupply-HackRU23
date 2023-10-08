@@ -318,7 +318,8 @@ const DummyBuy = () => {
   {
 map ? 
 <div className = 'mt-[80px] mb-9 grid grid-flow-row-dense grid-cols-2 grid-rows-1 shadow-black w-full gap-7' style={{ height: '80vh' }}>
-    <GoogleMapReact className="w-[300px]" bootstrapURLKeys={{ key: "AIzaSyB6212bDmstvwdAx-RlpqG5AooLW46yyew"}} defaultCenter={defaultProps.center} defaultZoom={defaultProps.zoom} 
+  {/* add api key here */}
+    <GoogleMapReact className="w-[300px]" bootstrapURLKeys={{ key: ""}} defaultCenter={defaultProps.center} defaultZoom={defaultProps.zoom} 
       onClick={(e) => {
         setSelectedLat(e.lat);
         setSelectedLong(e.lng);
