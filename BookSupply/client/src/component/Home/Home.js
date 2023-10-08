@@ -11,14 +11,13 @@ const Home = () => {
   return (
   <>
   <MetaData title = "BookSupply"/>
-  <Container component="main" >
+  <Container className="mb-20" component="main" >
     <Paper className='shadow-none'>
     {
-    user ? <h1>Welcome {user.name},</h1>: ''
+      user ? <h1>Welcome {user.name},</h1>: ''
     }
 
-
-    <div className ='flex gap-[30px] justify-center mt-[200px]'>
+    <div className ='flex gap-[30px] justify-center mt-[100px]'>
       <Card className='max-w-[345px]'>
       <CardActionArea component={Link} to={'/buy'}>
       <CardMedia
